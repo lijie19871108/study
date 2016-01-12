@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<!-- 配置spring的加载文件路径及文件名称 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:beans.xml</param-value>
+	</context-param>
+
+	<!-- 使用spring自带的监听器,其默认加载的是WEB-INF下的applicationContext.xml -->	
+<!-- 	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener> -->
+	
+	<servlet>  
+        <servlet-name>webmvct</servlet-name>  
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
+        <init-param>  
+            <param-name>contextConfigLocation</param-name>  
+            <param-value>/WEB-INF/servlet-context.xml</param-value>  
+        </init-param>
+        <load-on-startup>1</load-on-startup>  
+    </servlet>  
+    <servlet-mapping>  
+        <servlet-name>webmvct</servlet-name>  
+        <url-pattern>/</url-pattern>  
+    </servlet-mapping>
+	
+	<!-- 自己去写一个监听器来实现加载beans.xml,进而启动spring容器 -->
+	<!--
+	<listener>
+		<listener-class>com.amos.web.InitSpringFactoryListener</listener-class> 
+	</listener> -->
+</web-app>
