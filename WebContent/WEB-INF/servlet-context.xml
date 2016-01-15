@@ -7,9 +7,18 @@
                 http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd  
                 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">  
   
-    <!-- 对包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 稍后会创建该包：webmvct.cmd -->      
-    <context:component-scan base-package="com.aoptest.springaop"/>  
   
+  	<context:property-placeholder location="classpath:redis.properties" />
+    <!-- 对包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 稍后会创建该包：webmvct.cmd -->      
+    <context:component-scan base-package="com.TYYJ"/>  
+  
+      
+    <bean id="connectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"  
+        p:host-name="${redis.host}" p:port="${redis.port}" p:password="${redis.pass}"  p:pool-config-ref="poolConfig"/>  
+      
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">  
+        <property name="connectionFactory"   ref="connectionFactory" />  
+    </bean>
       
     <!-- 定义Spring MVC 的模板文件 -->  
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
