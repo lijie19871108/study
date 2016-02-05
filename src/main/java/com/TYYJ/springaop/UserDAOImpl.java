@@ -14,7 +14,7 @@ public class UserDAOImpl {
 
 	
 	@Autowired
-    protected RedisTemplate<Serializable, Serializable> redisTemplate;
+    protected RedisTemplate<String, String> redisTemplate;
 
     public void saveUser(final User user) {
         redisTemplate.execute(new RedisCallback<Object>() {

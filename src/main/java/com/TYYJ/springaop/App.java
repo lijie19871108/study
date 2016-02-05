@@ -49,7 +49,7 @@ public class App
     	return redisClient.getClient().get(key);
     }
     
-    @Autowired
+    /*@Autowired
     UserDAOImpl userDao;
     
     @RequestMapping(value="/saveuser", 
@@ -74,6 +74,6 @@ public class App
     	
     	User user = userDao.getUser(userid);
     	return "true";
-    }
+    }*/
     
 }
