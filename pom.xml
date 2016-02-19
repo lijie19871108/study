@@ -32,7 +32,7 @@
             <artifactId>spring-webmvc</artifactId>  
             <version>4.0.2.RELEASE</version>  
     </dependency> 
-          
+    
     <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
@@ -44,17 +44,6 @@
   		<artifactId>spring-data-redis</artifactId>
   		<version>1.0.2.RELEASE</version>
   	</dependency>
-    <dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-		<version>1.5.8</version>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-log4j12</artifactId>
-		<version>1.6.6</version>
-	</dependency>
-	
     
     <dependency>
   		<groupId>redis.clients</groupId>
@@ -81,103 +70,5 @@
         <version>2.5</version>    
         <scope>provided</scope>    
     </dependency>
-    
-    <dependency>
-		<groupId>org.apache.commons</groupId>
-		<artifactId>commons-pool2</artifactId>
-		<version>2.2</version>
-	</dependency>
-	<dependency>
-		<groupId>javax.faces</groupId>
-		<artifactId>jsf-api</artifactId>
-		<version>2.1</version>
-	</dependency>
-	<dependency>
-		<groupId>org.springframework.flex</groupId>
-		<artifactId>spring-flex-core</artifactId>
-		<version>1.5.0.RELEASE</version>
-	</dependency>
- 	<dependency>
-		<groupId>com.adobe.blazeds</groupId>
-		<artifactId>blazeds-common</artifactId>
-		<version>3.2.0.3978</version>
-	</dependency>
-	<dependency>
-		<groupId>com.adobe.blazeds</groupId>
-		<artifactId>blazeds-remoting</artifactId>
-		<version>3.2.0.3978</version>
-	</dependency>
-	<dependency>
-		<groupId>com.adobe.blazeds</groupId>
-		<artifactId>blazeds-core</artifactId>
-		<version>3.2.0.3978</version>
-	</dependency>
-	<dependency>
-		<groupId>com.adobe.blazeds</groupId>
-		<artifactId>blazeds-proxy</artifactId>
-		<version>3.2.0.3978</version>
-	</dependency>
-	
-	<dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.0.8</version>
-    </dependency>
-	<dependency>
-		<groupId>org.hibernate</groupId>
-		<artifactId>hibernate-core</artifactId>
-		<version>3.6.9.Final</version>
-	</dependency>
-	<dependency>
-      <groupId>dom4j</groupId>
-      <artifactId>dom4j</artifactId>
-      <version>1.6.1</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-logging</groupId>
-      <artifactId>commons-logging</artifactId>
-      <version>1.1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.1</version>
-    </dependency>
-    <dependency>
-      <groupId>cglib</groupId>
-      <artifactId>cglib</artifactId>
-      <version>2.2</version>
-    </dependency>
-    <dependency>
-     <groupId>org.hibernate.javax.persistence</groupId>
-     <artifactId>hibernate-jpa-2.0-api </artifactId>
-     <version>1.0.0.Final</version>
-    </dependency>
-    <dependency>
-     <groupId>javassist</groupId>
-     <artifactId>javassist</artifactId>
-     <version>3.12.0.GA</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.transaction</groupId>
-      <artifactId>jta</artifactId>
-      <version>1.1</version>
-    </dependency>
-	<dependency>
-		<groupId>antlr</groupId>
-		<artifactId>antlr</artifactId>
-		<version>2.7.6</version>
-	</dependency>
-	<dependency>
-		<groupId>asm</groupId>
-		<artifactId>asm</artifactId>
-		<version>3.1</version>
-	</dependency>
-	<dependency>
-		<groupId>backport-util-concurrent</groupId>
-		<artifactId>backport-util-concurrent</artifactId>
-		<version>3.1</version>
-	</dependency>
-	
   </dependencies>
 </project>

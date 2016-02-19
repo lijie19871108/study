@@ -2,6 +2,8 @@ package com.TYYJ.springaop;
 
 import java.io.Serializable;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
@@ -13,8 +15,8 @@ import org.springframework.stereotype.Component;
 public class UserDAOImpl {
 
 	
-	@Autowired
-    protected RedisTemplate<String, String> redisTemplate;
+	@Resource
+    protected RedisTemplate<Serializable, Serializable> redisTemplate;
 
     public void saveUser(final User user) {
         redisTemplate.execute(new RedisCallback<Object>() {
