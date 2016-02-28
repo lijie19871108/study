@@ -4,6 +4,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="hibernateStudy.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/hibernateStudy/hibernateStudy">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/TYYJ/target/classes"/>
         <property name="context-root" value="TYYJ"/>
     </wb-module>

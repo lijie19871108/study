@@ -3,6 +3,7 @@
 	<name>TYYJ</name>
 	<comment></comment>
 	<projects>
+		<project>hibernateStudy</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
