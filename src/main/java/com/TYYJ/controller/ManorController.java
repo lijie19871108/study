@@ -19,7 +19,7 @@ public class ManorController {
 	@Autowired
 	private ManorService manorService;
 	
-	@RequestMapping(value="/manors", method = RequestMethod.GET)
+	@RequestMapping(value="/manors")
 	public @ResponseBody String getAllManors(){
 		List<TyyjManor> manors = manorService.getAllManors();
 		return JSON.toJSONString(manors);
